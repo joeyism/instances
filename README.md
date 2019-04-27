@@ -2,11 +2,11 @@
 
 ## Customization Scripts
 
-[`base_customization.sh`](https://raw.githubusercontent.com/joeyism/instances/master/scripts/customization-scripts/base_customization.sh) add dot-files and configures vim, but doesn't install anything via yum nor apt
+[`base_customization.sh`](https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization.sh) add dot-files and configures vim, but doesn't install anything via yum nor apt
 
-[`base_customization_apt.sh`](https://raw.githubusercontent.com/joeyism/instances/master/scripts/customization-scripts/base_customization_apt.sh) like `base_customization` but installs with apt
+[`base_customization_apt.sh`](https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization_apt.sh) like `base_customization` but installs with apt
 
-[`base_customization_yum.sh`](https://raw.githubusercontent.com/joeyism/instances/master/scripts/scripts/customization-scripts/base_customization_yum.sh) like `base_customization` but installs with yum
+[`base_customization_yum.sh`](https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization_yum.sh) like `base_customization` but installs with yum
 
 
 ## Instances
