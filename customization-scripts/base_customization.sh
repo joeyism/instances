@@ -3,7 +3,7 @@
 #wget https://raw.githubusercontent.com/joeyism/.files/master/.vimrc ~/
 #wget https://raw.githubusercontent.com/joeyism/.files/master/.bash_aliases ~/
 #source ~/.bash_aliases
-
+cd ~
 git init
 git remote add origin https://github.com/joeyism/.files.git
 git pull origin master
