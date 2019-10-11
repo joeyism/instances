@@ -20,6 +20,7 @@ cd polybar && ./build.sh
 # kitty
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator ~/.local/bin/kitty 50
 
 # terminal
 sudo update-alternatives --config x-terminal-emulator
