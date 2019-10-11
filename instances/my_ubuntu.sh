@@ -17,5 +17,9 @@ sudo apt install vivaldi-stable
 git clone https://github.com/jaagr/polybar.git
 cd polybar && ./build.sh
 
+# kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+ln -s ~/.local/kitty.app/bin/kitty ~/.local/bin/
+
 # terminal
 sudo update-alternatives --config x-terminal-emulator
