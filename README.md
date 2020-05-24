@@ -12,6 +12,8 @@
 ## Instances
 These are scripts to run depending on what instances are spun up
 
+### Basics
+
 [**instances/my_ubuntu.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/my_ubuntu.sh)
 * local dev instances
 * sets up tmux, vim, polybar, i3, and everything else on Ubuntu
@@ -33,6 +35,10 @@ These are scripts to run depending on what instances are spun up
 * Installs things around python3, but not python3 itself (pip3)
 * sets up tmux and vim
 
+[**instances/apt-snippet-golang.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-snippet-golang.sh)
+* Installs latest golang with apt
+
+## Viz
 [**instances/apt-opencv-python-instances-3.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-opencv-python-instances-3.sh)
 * For instances that installs with apt (debian-based, ubuntu)
 * Tested on Ubuntu 16.04 on AWS EC2
@@ -48,6 +54,7 @@ These are scripts to run depending on what instances are spun up
 * sets up tmux and vim
 * sets up Chrome for selenium
 
+## GPU
 [**instances/apt-tf-python-instances.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-tf-python-instances.sh)
 * For instances that installs with apt (debian-based, ubuntu)
 * Tested on Ubuntu 16.04 on AWS EC2
@@ -56,6 +63,13 @@ These are scripts to run depending on what instances are spun up
 * sets up [coco](https://github.com/waleedka/coco.git)
 * sets up ffmpeg
 * sets up TensorFlow CPU
+
+[**instances/apt-gpu-python-instances.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-gpu-python36-instances.sh)
+* For instances that installs with apt (debian-based, ubuntu)
+* Tested on Ubuntu 18.04 on Google Cloud (GCP
+* Installs python36 and additional tools (pip, ipython, etc.)
+* sets up tmux and vim
+* sets up CUDA10 (for pytorch)
 
 [**instances/apt-tf-gpu-python-instances.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-tf-gpu-python-instances.sh)
 * For instances that installs with apt (debian-based, ubuntu)
@@ -82,16 +96,16 @@ These are scripts to run depending on what instances are spun up
 * sets up TensorFlow GPU CUDA9 without MKL
 * sets up CUDA from deb (apt)
 
+## Container
 [**instances/apt-docker-instance.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-docker-instance.sh)
 * For instances that installs with apt (debian-based, ubuntu)
 * Installs docker
 
+## Spark
 [**instances/yum-python-pyspark-instance.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/yum-python-pyspark-instance.sh)
 * For instances that installs with yum (centos, rhel, ami, etc.)
 * Installs python35, java8, and pyspark
 
-[**instances/apt-snippet-golang.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-snippet-golang.sh)
-* Installs latest golang with apt
 
 ## Misc
 `add-swapfiles.sh` adds a swapfile for using, based on code from [here](https://www.cyberciti.biz/faq/linux-add-a-swap-file-howto/)
