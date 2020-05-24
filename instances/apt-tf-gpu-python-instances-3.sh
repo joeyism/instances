@@ -1,9 +1,9 @@
 export python_version=35
 
 # My stuff
-wget https://raw.githubusercontent.com/joeyism/.files/master/run_apt.sh
-bash run_apt.sh
-rm run_apt.sh
+wget https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization_apt.sh
+bash base_customization_apt.sh
+rm base_customization_apt.sh
 
 # Install dependencies (gcc-6, g++-6, etc.)
 sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
