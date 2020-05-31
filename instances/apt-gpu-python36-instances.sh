@@ -4,7 +4,7 @@ curl https://raw.githubusercontent.com/joeyism/instances/master/customization-sc
 # Install dependencies
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install build-essential dkms freeglut3 freeglut3-dev libxi-dev libxmu-dev python3-pip htop
+sudo apt -y install build-essential dkms freeglut3 freeglut3-dev libxi-dev libxmu-dev python3-pip htop unzip
 
 # NVIDIA driver
 sudo apt -y install ubuntu-drivers-common
