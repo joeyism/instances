@@ -9,6 +9,7 @@ sudo apt -y install build-essential dkms freeglut3 freeglut3-dev libxi-dev libxm
 # NVIDIA driver
 sudo apt -y install ubuntu-drivers-common
 sudo ubuntu-drivers autoinstall
+sudo nvidia-smi -acp UNRESTRICTED
 
 # Install CUDA
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.0.130-1_amd64.deb
