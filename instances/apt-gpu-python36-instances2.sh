@@ -3,7 +3,6 @@ curl https://raw.githubusercontent.com/joeyism/instances/master/customization-sc
 
 # Install dependencies
 sudo apt -y update
-sudo apt -y upgrade
 sudo apt -y install python3-pip htop unzip
 sudo ln -s /usr/bin/python3 /usr/bin/python
 
