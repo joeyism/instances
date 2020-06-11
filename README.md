@@ -66,7 +66,15 @@ These are scripts to run depending on what instances are spun up
 
 [**instances/apt-gpu-python-instances.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-gpu-python36-instances.sh)
 * For instances that installs with apt (debian-based, ubuntu)
-* Tested on Ubuntu 18.04 on Google Cloud (GCP
+* Tested on Ubuntu 18.04 on Google Cloud (GCP)
+* Installs python36 and additional tools (pip, ipython, etc.)
+* sets up tmux and vim
+* sets up CUDA10 (for pytorch)
+
+
+[**instances/apt-gpu-python-instances2.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-gpu-python36-instances2.sh)
+* For instances that installs with apt (debian-based, ubuntu)
+* Tested on Ubuntu 18.04 on AWS
 * Installs python36 and additional tools (pip, ipython, etc.)
 * sets up tmux and vim
 * sets up CUDA10 (for pytorch)
