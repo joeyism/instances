@@ -20,3 +20,6 @@ PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;33m\]$(parse_git_branch):\[\033[0
 export PROMPT_COMMAND="history -a; history -n"
 export EDITOR=vim
 EOT
+
+mkdir -p ~/.ssh/pw
+sudo mkdir -p /etc/openvpn/client/
