@@ -11,8 +11,11 @@ git pull origin master
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
+mkdir -p ~/.ssh/pw
+sudo mkdir -p /etc/openvpn/client/
+
 # .bashrc
-cat <<EOT >> .bashrc
+cat <<EOT >> ~/.bashrc
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -20,6 +23,3 @@ PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;33m\]$(parse_git_branch):\[\033[0
 export PROMPT_COMMAND="history -a; history -n"
 export EDITOR=vim
 EOT
-
-mkdir -p ~/.ssh/pw
-sudo mkdir -p /etc/openvpn/client/
