@@ -23,6 +23,12 @@ These are scripts to run depending on what instances are spun up
 * installs python35 and necessary tools
 * sets up tmux and vim
 
+[**instances/apt-python3-instances.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-python3-instances.sh)
+* For instances that installs with apt (debian-based, ubuntu)
+* Tested on Ubuntu 18.04 on AWS EC2
+* Install basic tools for python3
+* sets up tmux and vim
+
 [**instances/apt-python-instances.sh**](https://raw.githubusercontent.com/joeyism/instances/master/instances/apt-python-instances.sh)
 * For instances that installs with apt (debian-based, ubuntu)
 * Tested on Ubuntu 16.04 on AWS EC2
