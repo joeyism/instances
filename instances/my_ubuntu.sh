@@ -1,11 +1,10 @@
 # dependencies
 sudo apt update
 sudo app upgrade
-sudo apt install -y vim vim-gtk tmux htop i3 rxvt-unicode git cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2 xclip
+sudo apt install -y vim vim-gtk conky rofi tmux htop i3 rxvt-unicode git cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev libxcb-xkb-dev pkg-config xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev libxcb-composite0-dev xcb libxcb-ewmh2 xclip
 
 # config files
 curl https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization.sh | bash
-rm .tmux.conf
 mv .tmux29.conf .tmux.conf
 
 # vivaldi
@@ -18,9 +17,8 @@ git clone https://github.com/jaagr/polybar.git
 cd polybar && ./build.sh
 
 # kitty
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-ln -s ~/.local/kitty.app/bin/kitty /usr/local/bin/
-sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/kitty 50
+sudo apt install kitty
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 50
 
 # terminal
 #sudo update-alternatives --config x-terminal-emulator
