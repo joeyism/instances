@@ -5,7 +5,6 @@ sudo apt install -y vim vim-gtk conky rofi tmux htop i3 rxvt-unicode git cmake c
 
 # config files
 curl https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization.sh | bash
-mv .tmux29.conf .tmux.conf
 
 # vivaldi
 wget -qO- http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
@@ -33,3 +32,9 @@ sudo apt install -y python3.8 python3.8-dev python3.8-venv python3.8-distutils p
 
 # misc
 sudo apt install -y arandr polybar light
+
+# plymouth themes
+git clone https://github.com/adi1090x/plymouth-themes.git
+sudo cp -r plymouth-themes/pack_2/cybernetic/ /usr/share/plymouth/themes/
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/cybernetic/cybernetic.plymouth 100
+sudo update-initramfs -u
