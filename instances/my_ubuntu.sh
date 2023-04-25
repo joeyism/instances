@@ -38,3 +38,13 @@ git clone https://github.com/adi1090x/plymouth-themes.git
 sudo cp -r plymouth-themes/pack_2/cybernetic/ /usr/share/plymouth/themes/
 sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/cybernetic/cybernetic.plymouth 100
 sudo update-initramfs -u
+
+curl 'https://avatars.githubusercontent.com/u/7503144?s=100&u=fc030f4c02c0a75617a72259f3b0f7d473aec04e&v=4' > logo.png
+sudo mv logo.png /usr/share/plymouth/ubuntu-logo.png
+
+# set darkmode
+gsettings set org.gnome.shell.ubuntu color-scheme prefer-dark
+gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark # Legacy apps, can specify an accent such as Yaru-olive-dark
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark # new apps
+gsettings reset org.gnome.shell.ubuntu color-scheme
+
