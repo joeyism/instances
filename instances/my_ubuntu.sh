@@ -47,4 +47,3 @@ gsettings set org.gnome.shell.ubuntu color-scheme prefer-dark
 gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark # Legacy apps, can specify an accent such as Yaru-olive-dark
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark # new apps
 gsettings reset org.gnome.shell.ubuntu color-scheme
-
