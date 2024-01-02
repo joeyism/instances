@@ -52,3 +52,16 @@ gsettings reset org.gnome.shell.ubuntu color-scheme
 echo "*.swp" > ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
+# docker
+curl -fsSL https://get.docker.com | sudo sh
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+chown $USER:$USER /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+# aws cli v2
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
