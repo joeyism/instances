@@ -9,14 +9,13 @@ curl https://raw.githubusercontent.com/joeyism/instances/master/customization-sc
 # vivaldi
 wget -qO- http://repo.vivaldi.com/stable/linux_signing_key.pub | sudo apt-key add -
 sudo add-apt-repository "deb [arch=i386,amd64] http://repo.vivaldi.com/stable/deb/ stable main"
-sudo apt install vivaldi-stable
+sudo apt install -y vivaldi-stable
 
 # polybar
-git clone https://github.com/jaagr/polybar.git
-cd polybar && ./build.sh
+sudo apt install -y polybar
 
 # kitty
-sudo apt install kitty
+sudo apt install -y kitty
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 50
 
 # terminal
