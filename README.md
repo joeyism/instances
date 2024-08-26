@@ -8,6 +8,7 @@
 
 [`base_customization_yum.sh`](https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization_yum.sh) like `base_customization` but installs with yum
 
+[`adv_customization_apt.sh`](https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/adv_customization_apt.sh) like `base_customization_apt` but more advanced
 
 ## Instances
 These are scripts to run depending on what instances are spun up
