@@ -7,3 +7,15 @@ wget https://github.com/neovim/neovim-releases/releases/download/v0.10.1/nvim.ap
 chmod +x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 nvim +PackerSync
+
+# docker
+curl https://get.docker.com/ | bash
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+
+# docker compose
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+mkdir -p $DOCKER_CONFIG/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v2.29.6/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+echo 'PATH="\$PATH:\$HOME/.docker/cli-plugins"' >> ~/.bashrc
