@@ -1,5 +1,6 @@
 #!/bin/bash
 curl https://raw.githubusercontent.com/joeyism/instances/master/customization-scripts/base_customization_apt.sh | bash
+sudo apt install fzf
 
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
