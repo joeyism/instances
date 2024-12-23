@@ -13,6 +13,7 @@ sudo mkdir -p /etc/openvpn/client/
 
 # .bashrc
 cat <<EOT >> ~/.bashrc
+stty -ixon
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
